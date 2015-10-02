@@ -1,0 +1,29 @@
+sys.argv[0:] python prototype.py|--todir|new_dir|log_file
+                        [0]        [1]     [2]     [3]
+
+args = sys.argv[1:] --todir|new_dir|log_file
+                       [0]    [1]     [2]
+
+
+*** open the appache log file and convert it to string
+animal_code.google.com -> filename for the appache log file
+
+filename = open(apache_logfile)
+f = filename.read()
+
+*** find all the puzzle images in the apache log file
+use re.search(r'puzzle/image', file) or re.findall(r'puzzle/image',file)
+
+*** remove duplicate images
+if re.search or re.findall not in images
+  images.append(re.search or re.findall)
+
+*** get the images location or directory
+images = os.listdir('.')
+
+*** make a new directory
+new_directory = os.makedirs(location, 0777)
+
+*** copy images into new_directory
+for img in images:
+  shutil.copy(files, location)
